@@ -1,6 +1,9 @@
 import discord
 from discord.ext import commands
 import asyncio
+import random
+import requests
+import os
 
 client = discord.Client()
 bot = commands.Bot(command_prefix="Crot.")
@@ -88,4 +91,4 @@ async def commands(ctx):
 async def invite(ctx):
     await ctx.send("NIH LINKNYA BABI @here https://discordapp.com/api/oauth2/authorize?client_id=548945449344696331&permissions=0&scope=bot ")
 
-bot.run("NTQ4OTQ1NDQ5MzQ0Njk2MzMx.D1MufA.lJcs9HYlrdeNawxl1BMjuMDk0Ac")
+client.run(str(os.environ.get('BOT_TOKEN')))
