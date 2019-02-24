@@ -91,4 +91,4 @@ async def commands(ctx):
 async def invite(ctx):
     await ctx.send("NIH LINKNYA BABI @here https://discordapp.com/api/oauth2/authorize?client_id=548945449344696331&permissions=0&scope=bot ")
 
-client.run(str(os.environ.get('BOT_TOKEN')))
+bot.run(str(os.environ.get('BOT_TOKEN')))
